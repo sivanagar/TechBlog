@@ -41,7 +41,27 @@ button:hover {
   margin: 0;
   padding: 0;
 }
-.post-box {
+
+.comment {
+  border: 2px solid rgb(20, 21, 27);
+  margin: 10px 0;
+  padding: 1%;
+}
+
+.new-post-form,
+.edit-post-form {
+  width: 100%;
+  max-width: 400px;
+  margin: 10px auto;
+  border: 1px solid rgb(20, 21, 27);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.post,
+.comment-form {
   border: 2px solid rgb(20, 21, 27);
   margin: 10px 0;
 
@@ -54,7 +74,7 @@ button:hover {
 
 textarea,
 input {
-  padding: 3%;
+  padding: 5px;
   border-radius: 5px;
   border: 1px solid #ccc;
 }
@@ -94,14 +114,6 @@ form label {
 #login,
 #signup {
   padding: 10px;
-}
-.wrapper {
-  width: 100%;
-  min-height: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
 }
 
 header {
@@ -188,11 +200,7 @@ main {
 
 .comment-form {
   margin-bottom: 5%;
-}
-
-.comment {
-  padding: 1%;
-  margin-bottom: 1%;
+  padding: 10px;
 }
 
 .comment:nth-child(odd) {
@@ -204,8 +212,11 @@ main {
   margin-bottom: 0.5%;
   opacity: 0.6;
 }
-
-.new-post-form input {
+#edit {
+  margin: 10px;
+}
+.new-post-form input,
+.new-post-form textarea {
   width: 300px;
 }
 

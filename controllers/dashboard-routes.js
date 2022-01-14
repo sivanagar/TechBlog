@@ -72,4 +72,7 @@ router.get('/edit/:id', withAuth, (req, res) => {
     });
 });
 
+router.get('/add-post', (req, res) => {
+  res.render('create-post');
+});
 module.exports = router;
